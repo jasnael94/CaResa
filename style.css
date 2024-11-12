@@ -1,0 +1,172 @@
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+body {
+font-family: 'Arial', sans-serif;
+background-color: #ccc;
+}
+
+
+header {
+background-color: black;
+color: white;
+padding: 0% 3% 2% 3%;
+}
+
+.header-container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+max-width: 1200px;
+margin: 0 auto;
+padding: 0% 3%;
+}
+
+.logo img {
+height: 50px;
+width: auto;
+}
+
+.header-content {
+flex-grow: 1;
+text-align: center;
+}
+
+.header-content h1 {
+font-size: 24px;
+color: white;
+margin: 3% 1%;
+}
+
+.nav ul {
+display: flex;
+justify-content: center;
+list-style: none;
+gap: 5%;
+}
+
+.nav a {
+color: white;
+text-decoration: none;
+font-size: 16px;
+font-weight: bold;
+transition: color 0.3s ease;
+}
+
+.nav a:hover {
+border-bottom: #ccc solid 1px;
+padding: 5px;
+}
+
+
+.buttonResa {
+text-align: right;
+
+}
+
+.buttonResa button {
+background-color: transparent;
+border: white solid 1px;
+padding: 2% 8%;
+font-size: 16px;
+cursor: pointer;
+border-radius: 4px;
+
+}
+
+.buttonResa button:hover {
+    padding: 3% 9%;
+    border: #ccc double 4px;
+    transition: transform .3s; 
+    
+}
+
+.buttonResa button a {
+color: white;
+text-decoration: none;
+}
+
+
+
+/* Media Queries pour la Responsivité */
+
+/* Smartphone Portrait */
+@media (max-width: 600px) {
+    .header-container {
+      flex-direction: column;
+      padding: 5%;
+    }
+  
+    .logo img {
+      height: 40px;
+    }
+  
+    .header-content h1 {
+      font-size: 18px;
+      margin: 2% 0;
+    }
+  
+    .nav ul {
+      flex-direction: column;
+      gap: 2%;
+      padding: 0;
+      margin-top: 20px;
+    }
+  
+    .nav a {
+      font-size: 14px;
+    }
+  
+    .buttonResa {
+      text-align: center;
+      margin-top: 15px;
+    }
+  
+    .buttonResa button {
+      padding: 10px 30px;
+      font-size: 14px;
+    }
+  
+    .buttonResa button:hover {
+      padding: 12px 35px;
+    }
+  }
+  
+  /* Tablettes (portrait et paysage) */
+  @media (max-width: 768px) {
+    .header-container {
+      flex-direction: column;
+      padding: 1%;
+    }
+  
+    .logo img {
+      height: 45px;
+    }
+  
+    .header-content h1 {
+      font-size: 20px;
+      margin: 3%;
+    }
+  
+    .nav a {
+      font-size: 12px;
+      margin-bottom: 3%;
+    }
+  
+    .buttonResa button {
+      margin-top: 5%;
+      padding: 2% 5%;
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .header-container{
+      padding: 1%;
+    }
+  }
