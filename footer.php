@@ -1,5 +1,5 @@
        <footer>
-            <div class="footer" style="width: 100%; height: 30vh; background-color: #000000; display: flex; flex-direction: column; justify-content: space-between; align-items: center; color: #ffffff; font-size: 20px;">
+            <div class="footer">
                 <div>
                     <p>Vous voulez plus d'informations, vous avez des demandes spécifiques : n'hésitez pas à nous contacter en cliquant sur le lien ci-dessous...</p>                   
                 </div>
