@@ -22,7 +22,7 @@ CREATE TABLE cars (
   model VARCHAR(255) NOT NULL, 
   yearProd YEAR NOT NULL,  
   pricePerDay FLOAT NOT NULL, 
-  available ENUM('disponible', 'réservée', 'indisponible') NOT NULL,  
+  available ENUM('disponible', 'indisponible') NOT NULL,  
   pictures VARCHAR(255)
 );
 
@@ -54,3 +54,12 @@ INSERT INTO clients (lastname, firstname, email, `address`, driver_licence, birt
   VALUES ('Volget', 'Calista', 'calista@gmail.com', '9 place Vendôme, 75001 Paris', 1, 20010524, '07 02 01 03 04'),
   ('Dechambre', 'Denis', 'denis@gmail.com', '9 place Vendôme, 75001 Paris', 1, 19940328 ,'06 01 02 03 04'), 
   ('Rajaonarimanana', 'Jason', 'jason@gmail.com', '9 place Vendôme, 75001 Paris', 1, 19940814, '06 05 06 07 08');
+
+
+INSERT INTO cars(brand, model, yearProd, pricePerDay)
+  VALUES ('Bugatti', 'Veyron', 2020, 2000), 
+  ('Audi', 'RSQ8', 2024, 1500),
+  ('Dodge', 'Challenger Hellcat', 2018, 2500),
+  ('Cadillac', 'Deville Convertible Serie 62', 1960, 3500),
+  ('Rolls Royce', 'Phantom', 2022, 2000),
+  ('Aston Martin', 'Vantage', 2013, 1500);
