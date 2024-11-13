@@ -63,3 +63,10 @@ INSERT INTO cars(brand, model, yearProd, pricePerDay)
   ('Cadillac', 'Deville Convertible Serie 62', 1960, 3500),
   ('Rolls Royce', 'Phantom', 2022, 2000),
   ('Aston Martin', 'Vantage', 2013, 1500);
+
+UPDATE cars SET pictures = '/pictures/bugatti/bugatti-main.jpg' WHERE id = 1 ;
+UPDATE cars SET pictures = '/pictures/audi/audi-main.jpg' WHERE id = 2 ;
+UPDATE cars SET pictures = '/pictures/dodge/dodge-main.jpg' WHERE id = 3 ;
+UPDATE cars SET pictures = '/pictures/cadillac/cadillac-main.jpg' WHERE id = 4 ;
+UPDATE cars SET pictures = '/pictures/rolls/rr-main.jpg' WHERE id = 5 ;
+UPDATE cars SET pictures = '/pictures/am/aston-main.webp' WHERE id = 6 ;
