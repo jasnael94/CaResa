@@ -1,5 +1,8 @@
 <?php
   session_start();
+  if(empty($_SESSION['login'])) {
+    header('location: login.php');
+  }
 ?>
 
 <!DOCTYPE html>
@@ -43,5 +46,7 @@
       </div>
     </div>
   </header>
+  <div class="main-content">
+  
 
 

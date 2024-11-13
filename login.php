@@ -6,7 +6,7 @@
         $password = $_POST['password'];
 
         if(!empty($username) && !empty($password)) {
-            if(($username === "Dechambre" || $username === "Raj") && $password === "Royalride2024") {
+            if(($username === "Cali" || $username === "Denis" || $username === "Jason") && $password === "Royalride2024") {
                 $connection = "Connection réussi, redirection vers la page d'accueil.." ;
                 $_SESSION['login'] = $username ;
                 header('refresh: 2 url="home.php"');
