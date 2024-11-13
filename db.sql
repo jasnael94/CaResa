@@ -47,3 +47,10 @@ CREATE TABLE options (
   `type` VARCHAR(255) NOT NULL, 
   FOREIGN KEY (idBooking) REFERENCES bookings(id)
 );
+
+-- Ajout de quelques données (clients et voitures)
+
+INSERT INTO clients (lastname, firstname, email, `address`, driver_licence, birthday, phone)
+  VALUES ('Volget', 'Calista', 'calista@gmail.com', '9 place Vendôme, 75001 Paris', 1, 20010524, '07 02 01 03 04'),
+  ('Dechambre', 'Denis', 'denis@gmail.com', '9 place Vendôme, 75001 Paris', 1, 19940328 ,'06 01 02 03 04'), 
+  ('Rajaonarimanana', 'Jason', 'jason@gmail.com', '9 place Vendôme, 75001 Paris', 1, 19940814, '06 05 06 07 08');
