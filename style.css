@@ -505,3 +505,62 @@ section{
   font-size: 18px;
   font-weight: bold;
 }
+
+
+/* styles pages Conditions */
+body.conditions-page {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Style du conteneur principal des conditions générales */
+.conditions-container {
+  opacity: 40%;
+  width: 80%;               /* Largeur du conteneur */
+  max-width: 1200px;        /* Largeur maximale pour les grands écrans */
+  height: 50vh;             /* Hauteur du conteneur relative à la fenêtre */
+  margin: 0 auto;           /* Centrer le conteneur */
+  overflow-y: auto;         /* Scroll vertical si le contenu dépasse */
+  padding: 20px;
+  background-color: #faf2f2;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-sizing: border-box;   /* Inclut le padding dans la hauteur et la largeur */
+}
+
+/* Style du titre principal */
+.conditions-title {
+  text-align: center;
+  font-size: 2.5em;
+  color: #291a62;
+  margin-bottom: 20px;
+}
+
+/* Style pour chaque section */
+.conditions-section {
+  margin-bottom: 40px;
+}
+
+/* Titres des sections */
+.section-title {
+  font-size: 1.5em;
+  color: #0f375a;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+/* Style des paragraphes */
+.conditions-text {
+  font-size: 1.1em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.highlight-text {
+  color: #901a1a;
+  font-weight: bold;
+}
+
