@@ -23,12 +23,12 @@ padding: 0% 3% 2% 3%;
 }
 
 .footer {
-  height: 30vh;
+  margin-top: 5px;
+  gap: 20px;
   background-color: #000000;
   display: flex;
   flex-direction: column; 
-  justify-content: space-between;
-  align-items: center;
+  align-items:center;
   color: #ffffff;
   font-size: 20px;
 }
@@ -182,7 +182,7 @@ text-decoration: none;
 }
 
 .search-container {
-  background-color: #3d3d3d;
+  background-color: #1d1d1d;
   height: 65px;
   display: flex;
   align-items: center;
@@ -203,8 +203,8 @@ text-decoration: none;
 
 .cars-container {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
 }
 
 .car-container {
@@ -212,23 +212,25 @@ text-decoration: none;
   border-radius: 5px;
   margin: 5px;
   color: whitesmoke;
-  width: 425px;
+  flex: 1 0 600px;
+  scroll-snap-align: start;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 .car-container img {
-  width: 400px;
-  height: 400px;
+  width: 95%;
+  height: 580px;
   margin: 2px;
 }
 
 .reserve-button {
   width: 50%;
   text-decoration: none;
-  color: #000000;
-  background-color: rgba(245, 245, 245, 0.70);
+  border: solid white 1px;
+  color: whitesmoke;
+  background-color: black;
   margin: 10px;
   padding: 5px;
   text-align: center;
@@ -236,13 +238,28 @@ text-decoration: none;
 }
 
 .reserve-button:hover {
-  background-color: rgba(245, 245, 245, 1);
+  border: #ffffff double 4px;
+  transition: transform .3s; 
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ffffff;
+}
+
+
+::-webkit-scrollbar {
+  height: 15px;
+  background-color: #080707;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #000000;
 }
 
 /* Media Queries pour la Responsivité */
 
 /* Smartphone Portrait */
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .header-container {
       flex-direction: column;
       padding: 5%;
@@ -281,8 +298,12 @@ text-decoration: none;
     .buttonResa button:hover {
       padding: 12px 35px;
     }
+
+    .car-container {
+      flex-basis: 380px;
+    }
+
   }
-  
   /* Tablettes (portrait et paysage) */
   @media (max-width: 768px) {
     .header-container {

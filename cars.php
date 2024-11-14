@@ -17,7 +17,7 @@
                 <option selected disabled hidden><?php echo $_GET['filter'];?></option>
                 <option>Prix</option>
                 <option>Année</option>
-                <option>Disponnible</option>
+                <option>Disponible</option>
             </select>
             <button type="submit">Trier</button>
         </form>
