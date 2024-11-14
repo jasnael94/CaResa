@@ -184,10 +184,12 @@ text-decoration: none;
 }
 
 .search-container {
-  background-color: #1d1d1d;
-  height: 65px;
+  margin-top: 10px;
+  background-color: transparent;
+  height: 100px;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 30px;
 }
 
@@ -198,18 +200,40 @@ text-decoration: none;
   border-radius: 3px;
 }
 
+.search-container button {
+  color: whitesmoke;
+  background-color: #000000;
+  border: solid whitesmoke 1px ;
+}
+
 .search-container button:hover {
-  background-color: darkgrey;
+  border: #ffffff double 4px;
+  transition: transform .3s; 
   cursor: pointer;
 }
 
-.cars-container {
+.cars-infos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cars-title {
+  color: whitesmoke;
+  text-align: center;
+  text-decoration: underline;
+  font-size: 35px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.carousels-container {
   display: flex;
   overflow-x: scroll;
   scroll-snap-type: x mandatory;
 }
 
-.car-container {
+.carousel-container {
   background-color: rgba(29, 29, 29, 0.3);
   border-radius: 5px;
   margin: 5px;
@@ -218,17 +242,42 @@ text-decoration: none;
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  border:solid whitesmoke 2px;
+}
+
+.carousel-container img {
+  width: 95%;
+  margin: 2px;
 }
 
 .car-container img {
   width: 95%;
-  height: 580px;
   margin: 2px;
 }
 
+.cars-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.car-container {
+  width: 426px;
+  background-color: rgba(29, 29, 29, 0.3);
+  border-radius: 5px;
+  margin: 5px;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border:solid whitesmoke 2px;
+}
+
 .reserve-button {
-  width: 50%;
+  width: 100%;
   text-decoration: none;
   border: solid white 1px;
   color: whitesmoke;
@@ -305,8 +354,12 @@ text-decoration: none;
       padding: 12px 35px;
     }
 
-    .car-container {
+    .carousel-container {
       flex-basis: 380px;
+    }
+
+    .search-container {
+      flex-direction: column;
     }
 
   }
