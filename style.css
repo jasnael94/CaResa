@@ -7,8 +7,11 @@ box-sizing: border-box;
 
 
 body {
-background-image:url(merco.jpg);
-background-size: auto;
+background-image: url(merco.jpg);
+background-size: cover;
+background-position: center center;
+background-repeat: no-repeat;
+height: 100vh;
 font-family: 'Arial', sans-serif;
 background-color: #ccc;
 width: 100% ;
@@ -398,16 +401,6 @@ text-decoration: none;
   }
 
 /* css page Home */
-.homestyle{
-  background-image: url(merco.jpg);
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  height: 100vh;
-  margin: 0;
-  font-family: ;
-  display: flex;
-}
 h3{
   color: #f0e9e9;
   font-family: 'Times New Roman', Times, serif;
