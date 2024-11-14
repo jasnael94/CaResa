@@ -2,12 +2,7 @@
     require_once('header.php');
 ?>
 <body class="conditions-page">
-
-    <!-- Le header est inclus ici, par exemple via PHP, ou autre méthode -->
-    <header>
-        <!-- Contenu du header -->
-    </header>
-
+    
     <div class="conditions-container">
         <h1 class="conditions-title">Conditions Générales de Location - Royal Ride</h1>
 
