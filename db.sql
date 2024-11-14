@@ -56,17 +56,16 @@ INSERT INTO clients (lastname, firstname, email, `address`, driver_licence, birt
   ('Rajaonarimanana', 'Jason', 'jason@gmail.com', '9 place Vendôme, 75001 Paris', 1, 19940814, '06 05 06 07 08');
 
 
-INSERT INTO cars(brand, model, yearProd, pricePerDay)
-  VALUES ('Bugatti', 'Veyron', 2020, 2000), 
-  ('Audi', 'RSQ8', 2024, 1500),
-  ('Dodge', 'Challenger Hellcat', 2018, 2500),
-  ('Cadillac', 'Deville Convertible Serie 62', 1960, 3500),
-  ('Rolls Royce', 'Phantom', 2022, 2000),
-  ('Aston Martin', 'Vantage', 2013, 1500);
-
-UPDATE cars SET pictures = '/pictures/bugatti/bugatti-main.jpg' WHERE id = 1 ;
-UPDATE cars SET pictures = '/pictures/audi/audi-main.jpg' WHERE id = 2 ;
-UPDATE cars SET pictures = '/pictures/dodge/dodge-main.jpg' WHERE id = 3 ;
-UPDATE cars SET pictures = '/pictures/cadillac/cadillac-main.jpg' WHERE id = 4 ;
-UPDATE cars SET pictures = '/pictures/rolls/rr-main.jpg' WHERE id = 5 ;
-UPDATE cars SET pictures = '/pictures/am/aston-main.webp' WHERE id = 6 ;
+INSERT INTO cars(brand, model, yearProd, pricePerDay, pictures)
+  VALUES ('Bugatti', 'Veyron', 2020, 2000, '/pictures/bugatti/bugatti-main.jpg'), 
+  ('Audi', 'RSQ8', 2024, 1500, '/pictures/audi/audi-main.jpg'),
+  ('Dodge', 'Challenger Hellcat', 2018, 2500, '/pictures/dodge/dodge-main.jpg'),
+  ('Cadillac', 'Deville Convertible Serie 62', 1960, 3500, '/pictures/cadillac/cadillac-main.jpg'),
+  ('Rolls Royce', 'Phantom', 2022, 2000, '/pictures/rolls/rr-main.jpg'),
+  ('Aston Martin', 'Vantage', 2013, 1500, '/pictures/am/aston-main.webp'),
+  ('BMW', 'M3 Touring', 2021, 1500, '/pictures/bmw/m3-main.jpg'),
+  ('BMW', 'M5 Competition', 2020, 2000, '/pictures/bmw/m5-main.jpg'),
+  ('Maserati', 'MC20', 2020, 2500, '/pictures/maserati/maserati-main.jpg'),
+  ('Porsche', '911 Turbo S', 2014, 2000, '/pictures/porsche/911-main.jpg'),
+  ('Mercedes-Benz', 'G63', 2023, 1250, '/pictures/mercedes/g63-main.jpg'),
+  ('Chevrolet', 'Corvette C8', 2022, 1350, '/pictures/chevrolet/corvette-main.jpg');
