@@ -7,7 +7,8 @@ box-sizing: border-box;
 
 
 body {
-  background-image:url(merco.jpg);
+background-image:url(merco.jpg);
+background-size: auto;
 font-family: 'Arial', sans-serif;
 background-color: #ccc;
 width: 100% ;
@@ -209,11 +210,11 @@ text-decoration: none;
 }
 
 .car-container {
-  background-color: #1d1d1d;
+  background-color: rgba(29, 29, 29, 0.3);
   border-radius: 5px;
   margin: 5px;
   color: whitesmoke;
-  flex: 1 0 600px;
+  flex: 0 0 600px;
   scroll-snap-align: start;
   display: flex;
   flex-direction: column;
@@ -255,6 +256,10 @@ text-decoration: none;
 
 ::-webkit-scrollbar-thumb {
   background-color: #000000;
+}
+
+.contact-info, .contact-section {
+  color: whitesmoke;
 }
 
 /* Media Queries pour la Responsivité */

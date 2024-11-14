@@ -4,7 +4,7 @@
 ?>
 
   <main>
-    <section class="contact-section">
+    <div class="contact-section">
       <h1>Contactez-nous</h1>
       <p>Vous avez une question ? Besoin d'aide pour réserver votre voiture de luxe ? Contactez-nous en remplissant le formulaire ci-dessous.</p>
 
@@ -42,9 +42,9 @@
 
         <button type="submit" class="btn-submit">Envoyer</button>
       </form>
-    </section>
+    </div>
 
-    <section class="contact-info">
+    <div class="contact-info">
       <h2>Nos coordonnées</h2>
       <p>Vous pouvez aussi nous contacter directement via les informations ci-dessous.</p>
       <ul>
@@ -52,7 +52,7 @@
         <li><strong>Téléphone :</strong> +33 1 23 45 67 89</li>
         <li><strong>Adresse :</strong> 9 Place Vendôme, 75001 Paris, France</li>
       </ul>
-    </section>
+    </div>
   </main>
 
   <?php

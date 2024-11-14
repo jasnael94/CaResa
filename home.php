@@ -2,19 +2,11 @@
     require_once('connect.php');
     require_once('header.php');
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="homestyle">
+<div class="homestyle">
     <section class=>
-            <div class="homecont">
-                <h3>Présentation</h3>
-               <p class="ph">Bienvenue chez RoyalRide, le leader de la location de voitures de luxe. Spécialisés dans l'expérience haut de gamme, nous vous offrons une flotte exclusive de véhicules de prestige, allant des berlines de luxe aux voitures sportives. Chaque modèle a été soigneusement sélectionné pour son confort, ses performances et son design exceptionnel, afin de répondre aux attentes les plus élevées de nos clients.
+        <div class="homecont">
+            <h3>Présentation</h3>
+            <p class="ph">Bienvenue chez RoyalRide, le leader de la location de voitures de luxe. Spécialisés dans l'expérience haut de gamme, nous vous offrons une flotte exclusive de véhicules de prestige, allant des berlines de luxe aux voitures sportives. Chaque modèle a été soigneusement sélectionné pour son confort, ses performances et son design exceptionnel, afin de répondre aux attentes les plus élevées de nos clients.
 
 Chez RoyalRide, nous croyons que chaque voyage doit être une expérience mémorable. Que vous ayez besoin d'une voiture pour un événement spécial, un week-end d'aventure ou un déplacement professionnel, nous mettons à votre disposition des véhicules qui allient élégance et puissance.
 
@@ -36,11 +28,8 @@ Notre objectif est de vous offrir plus qu'une simple location : une expérience 
             
             </div>
 
-        </section>
-    </div>
-</body>
-</html>
-
+    </section>
+</div>
 <?php
     require_once('footer.php');
 ?>

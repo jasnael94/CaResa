@@ -3,13 +3,26 @@
     require_once('header.php');
 
     $query = "SELECT * FROM cars";
+
+    if($_GET['filter'] === "Prix") {
+        $query = "SELECT * FROM cars ORDER BY pricePerDay ASC";
+    } elseif ($_GET['filter'] === "Année") {
+        $query = "SELECT * FROM cars ORDER BY yearProd ASC";
+    } elseif ($_GET['filter'] === "Disponible") {
+        $query = "SELECT * FROM cars ORDER BY available ASC";
+    }
+    if(!empty($_GET['search'])) {
+        $query = "SELECT * FROM cars WHERE brand LIKE '%{$_GET['search']}%'";
+    }
+
     $stmt = $pdo->prepare($query);
     $stmt->execute();
     $carsInfos = $stmt->fetchAll();
+
 ?>
     <div class="search-container">
         <form action="" method="get">
-            <input type="text" id="search" name="search" placeholder="Entrez la marque que vous souhaitez">
+            <input type="text" id="search" name="search" placeholder="<?php echo $_GET['search']; ?>">
             <button type="submit">Rechercher</button>
         </form>
         <form action="" method="get">
@@ -36,7 +49,13 @@
                         <li>Disponibilité : <?php echo $carInfo['available'] ?></li>
                     </ul>
                 </div>
-                <a class="reserve-button" href="cart.php?id=<?php echo $carInfo['id'];?>" target="blank">Réserver</a>
+                <?php
+                    if($carInfo['available'] === 'disponible') { ?>
+                        <a class="reserve-button" href="cart.php?id=<?php echo $carInfo['id'];?>" target="blank">Réserver</a>
+                <?php } else {
+                    ?> <br><p style="color: red; font-size: 20px;">Non disponible à la réservation</p>
+                <?php }
+                ?>
             </div>
         <?php } ?>
         </div>
