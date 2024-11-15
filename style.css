@@ -28,7 +28,7 @@ padding: 0% 3% 2% 3%;
 }
 
 .footer {
-  margin-top: 5px;
+  padding-top: 10px;
   gap: 20px;
   background-color: #000000;
   display: flex;
@@ -187,8 +187,8 @@ text-decoration: none;
 }
 
 .search-container {
+  background-color: #000000;
   margin-top: 10px;
-  background-color: transparent;
   height: 100px;
   display: flex;
   align-items: center;
@@ -264,6 +264,7 @@ text-decoration: none;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: #000000;
 }
 
 .car-container {
@@ -277,6 +278,7 @@ text-decoration: none;
   justify-content: space-between;
   align-items: center;
   border:solid whitesmoke 2px;
+  box-shadow: 3px 3px 5px rgb(253, 252, 252);
 }
 
 .reserve-button {
