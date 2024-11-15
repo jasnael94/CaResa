@@ -2,6 +2,13 @@
     require_once('connect.php');
     require_once('header.php');
 
+    if(empty($_GET['filter'])) {
+        $_GET['filter'] = "";
+    }
+    if(empty($_GET['search'])) {
+        $_GET['search'] = "";
+    }
+
     $queryCarousel = "SELECT * FROM cars WHERE id <= 5";
     $queryCars = "SELECT * FROM cars";
 

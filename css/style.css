@@ -10,7 +10,6 @@ body {
 background-image: url(/pictures/merco.jpg);
 background-size: cover;
 background-position: center center;
-background-repeat: no-repeat;
 height: 100vh;
 font-family: 'Arial', sans-serif;
 background-color: #ccc;
@@ -27,6 +26,8 @@ color: white;
 padding: 0% 3% 2% 3%;
 }
 
+/* CSS footer.php */
+
 .footer {
   padding-top: 10px;
   gap: 20px;
@@ -41,6 +42,8 @@ padding: 0% 3% 2% 3%;
 .main-content {
   flex: 1;
 }
+
+/* CSS header.php */
 
 .header-container {
 display: flex;
@@ -114,6 +117,8 @@ color: white;
 text-decoration: none;
 }
 
+/* CSS login.php */
+
 .login-bg {
   background-image: url("login.jpg");
   background-size: cover;
@@ -185,6 +190,8 @@ text-decoration: none;
   background-color: rgba(255, 9, 9, 1);
   cursor: pointer;
 }
+
+/* CSS page cars.php */
 
 .search-container {
   background-color: #000000;
@@ -316,6 +323,58 @@ text-decoration: none;
   color: whitesmoke;
 }
 
+/* CSS booking.php */
+
+.bookings-container {
+  display: flex;
+  justify-content: space-between;
+  color: whitesmoke;
+}
+ .bookings-container ul {
+  list-style: none;
+ }
+
+ .booking-container li, .booking-container h4 {
+  margin: 2px;
+  padding: 2px;
+ }
+
+.bookings-container h2, .booking-container h3 {
+  text-decoration: underline;
+  margin: 5px;
+}
+
+.booking-container {
+  width: 45%;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-infos{
+  background-color: rgb(29, 29, 29, 0.70);
+  border: solid whitesmoke 1px;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px rgb(253, 252, 252);
+  display: flex;
+  flex-direction: column;
+}
+
+.status-open {
+  color: greenyellow;
+}
+
+.status-closed {
+  color: red;
+}
+
+.separator {
+  border: solid whitesmoke 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  box-shadow: 3px 3px 5px rgb(253, 252, 252);
+}
+
 /* Media Queries pour la Responsivité */
 
 /* Smartphone Portrait */
@@ -367,6 +426,16 @@ text-decoration: none;
       flex-direction: column;
     }
 
+    .bookings-container {
+      flex-direction: column;
+    }
+
+    .booking-container {
+      width: 100%;
+    }
+    .separator {
+      display: none;
+    }
   }
   /* Tablettes (portrait et paysage) */
   @media (max-width: 768px) {

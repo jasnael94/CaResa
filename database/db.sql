@@ -34,7 +34,7 @@ CREATE TABLE bookings (
   startDate DATE NOT NULL,
   endDate DATE NOT NULL, 
   total FLOAT NOT NULL, 
-  statut ENUM('en cours', 'confirmée', 'annulée') NOT NULL,  
+  statut ENUM('en cours', 'terminer') NOT NULL,  
   bookingDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,  
   FOREIGN KEY (idClient) REFERENCES clients(id),
   FOREIGN KEY (idCar) REFERENCES cars(id)
