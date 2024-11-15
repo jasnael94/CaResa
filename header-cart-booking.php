@@ -1,5 +1,8 @@
 <?php
   session_start();
+  if(empty($_SESSION['login'])) {
+    header('location: login.php');
+  }
 ?>
 
 <!DOCTYPE html>
@@ -33,11 +36,7 @@
             <li><a href="booking.php">Mes réservations</a></li>
             <li><a href="contact.php">Contact</a></li>
             <li><a href="faq.php">FAQ</a></li>
-            <?php
-              if(!empty($_SESSION['login'])) { ?> 
-              <li><a href="logout.php">Déconnexion</a></li>
-        <?php }
-            ?>
+            <li><a href="logout.php">Déconnexion</a></li>
           </ul>
         </nav>
       </div>
