@@ -635,3 +635,204 @@ body.conditions-page {
   font-weight: bold;
 }
 
+/* Réinitialisation des marges et des espacements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fond général de la page */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Conteneur principal de la page */
+.cart-container {
+  max-width: 900px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre principal */
+.cart-container h1 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Style des labels du formulaire */
+form label {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+  display: block;
+  margin-top: 15px;
+}
+
+/* Style des champs de saisie */
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form select {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Effet de survol pour les champs de saisie */
+form input[type="text"]:hover,
+form input[type="email"]:hover,
+form input[type="date"]:hover,
+form select:hover {
+  border-color: #555;
+}
+
+/* Effet au focus sur les champs de saisie */
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="date"]:focus,
+form select:focus {
+  border-color: #555;
+  outline: none;
+}
+
+/* Bouton de soumission */
+form button {
+  background-color: #333;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  transition: background-color 0.3s ease;
+}
+
+/* Effet de survol pour le bouton */
+form button:hover {
+  background-color: black;
+}
+
+/* Style des options du select */
+form select {
+  background-color: #fff;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+
+/* Style des champs de saisie */
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form select {
+  font-size: 1rem;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+
+
+form input,
+form select {
+  margin-top: 5px;
+}
+
+/* Style des erreurs */
+.error-message {
+  color: red;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+/* Personnalisation du fond pour une meilleure lisibilité */
+body {
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Limiter la taille du formulaire et centrer */
+form {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+
+.confirmation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.confirmation-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.confirmation-card h1 {
+  color: black;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.success-message {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.confirmation-card p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+.confirmation-card p strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.note {
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 20px;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.back-button:hover {
+  background-color: black;
+}
+
+
