@@ -6,7 +6,7 @@
         $password = $_POST['password'];
 
         if(!empty($username) && !empty($password)) {
-            if(($username === "Cali" || $username === "Denis" || $username === "Jason") && $password === "Royalride2024") {
+            if(($username === "Calista" || $username === "Denis" || $username === "Jason") && $password === "Royalride2024") {
                 $connection = "Connection réussi, redirection vers la page d'accueil.." ;
                 $_SESSION['login'] = $username ;
                 header('refresh: 2 url="home.php"');
@@ -33,7 +33,7 @@
             <form action="login.php" method="post" class="login-form">
                 <label for="username">Username</label>
                 <input type="text" id="username" name="username" placeholder="Enter your username" required>
-                <label for="passord">Password</label>
+                <label for="password">Password</label>
                 <input type="password" id="password" name="password" placeholder="Enter your password" required>
                 <button type="submit">Connect</button>
             </form>
