@@ -13,6 +13,8 @@ CREATE TABLE clients (
   driver_licence TINYINT(1),  
   birthday DATE NOT NULL, 
   phone VARCHAR(100) NOT NULL
+  createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
 );
 
 -- Voitures
@@ -23,7 +25,8 @@ CREATE TABLE cars (
   yearProd YEAR NOT NULL,  
   pricePerDay FLOAT NOT NULL, 
   available ENUM('disponible', 'indisponible') NOT NULL,  
-  pictures VARCHAR(255)
+  pictures VARCHAR(255),
+  createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP 
 );
 
 -- Réservations
@@ -35,7 +38,8 @@ CREATE TABLE bookings (
   endDate DATE NOT NULL, 
   total FLOAT NOT NULL, 
   statut ENUM('en cours', 'terminer') NOT NULL,  
-  bookingDate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,  
+  createdAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updatedAt TIMESTAMP DEFAULT CURRENT_TIMESTAMP,  
   FOREIGN KEY (idClient) REFERENCES clients(id),
   FOREIGN KEY (idCar) REFERENCES cars(id)
 );
