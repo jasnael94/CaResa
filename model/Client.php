@@ -1,6 +1,7 @@
 <?php
 
 class Client{
+    use Timestamp;
     public string $lastname;
     public string $firstname;
     public string $email;

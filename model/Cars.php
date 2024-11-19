@@ -2,6 +2,7 @@
 
 class Cars 
 {
+        use Timestamp;
         private int $brand;
         private int $model;
         private int $yearProd;

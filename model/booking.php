@@ -1,6 +1,7 @@
 <?php
 class Booking
 {
+    use Timestamp;
     public int $id;
     public int $idClient;
     public int $idCar;
