@@ -39,7 +39,7 @@
         <label for="endDate">Date de Fin de Location:</label>
         <input type="date" id="endDate" name="endDate" required>
 
-        <button type="submit">Réserver</button>
+        <button class="btn-submit" type="submit">Réserver</button>
     </form>
 </div>
 <div>

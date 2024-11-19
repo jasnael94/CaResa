@@ -709,7 +709,7 @@ form select:focus {
 }
 
 /* Bouton de soumission */
-form button {
+.btn-submit{
   background-color: #333;
   color: #fff;
   padding: 12px 20px;
@@ -723,7 +723,7 @@ form button {
 }
 
 /* Effet de survol pour le bouton */
-form button:hover {
+.btn-submit:hover {
   background-color: black;
 }
 
