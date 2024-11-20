@@ -1,4 +1,5 @@
 <?php
+    $css = "stylecars.css";
     require_once('connect.php');
     require_once('header.php');
 

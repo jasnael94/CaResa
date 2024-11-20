@@ -1,4 +1,5 @@
 <?php 
+    $css = "styleCG.css";
     require_once('header.php');
 ?>
 <body class="conditions-page">

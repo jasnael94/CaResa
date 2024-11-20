@@ -1,6 +1,8 @@
 <?php
+    $css = "stylehome.css";
     require_once('connect.php');
     require_once('header.php');
+    echo $css;
 ?>
 <div class="homestyle">
     <section class=>

@@ -1,4 +1,5 @@
 <?php 
+    $css = "stylefaq.css";
     require_once('header.php');
 ?>
     <div class="faq-container">
