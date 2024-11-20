@@ -1,11 +1,11 @@
 @font-face {
   font-family: 'Slogan';
-  src: url(../fonts/MrsSaintDelafield-Regular.ttf) format(truetype);
+  src: url(../fonts/slogan.ttf) format(truetype);
 }
 
 @font-face {
-  font-family: 'Title' ;
-  src: url(../fonts/AlumniSansPinstripe-Regular.ttf) format(truetype);
+  font-family: 'Royalride' ;
+  src: url(../fonts/bodyfont.ttf) format(truetype);
 }
 
 
