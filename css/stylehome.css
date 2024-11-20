@@ -1,11 +1,17 @@
 /* css page Home */
   h2{
-    font-size: 70px;
+    font-size: 80px;
     color: #faf8f8;
+    font-family: 'Title';
+    
   }
   h3{
+    font-size: 50px;
     color: #f0e9e9;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Slogan';
+    font-weight: 100;
+    border-bottom: var(--red) solid 1px;
+    
   }
   
   .ph{
