@@ -1,0 +1,73 @@
+/* CSS login.php */
+
+.login-bg {
+    background-image: url("login.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.login-content {
+    width: 400px;
+    height: 500px;
+    background-color: rgba(29, 29, 29, 0.90);
+    border: solid #1d1d1d 2px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:  center;
+}
+  
+.login-content h1{
+    color: whitesmoke;
+    font-size: 35px;
+    text-decoration: underline;
+}
+  
+.login-content h2 {
+    color: whitesmoke;
+    font-size: 28px;
+    text-decoration: underline;
+}
+  
+.login-content p  {
+    color: greenyellow;
+}
+  
+.login-form {
+    border: solid red 1px;
+    border-radius: 5px;
+    width: 80%;
+    height: 45%;
+    color: whitesmoke;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+  
+.login-form input {
+    width: 55%;
+    border-radius: 6px;
+    padding: 3px;
+    border: 0;
+}
+  
+.login-form button {
+    border: 0;
+    width: 55%;
+    background-color: rgba(255, 9, 9, 0.50);
+    border-radius: 6px;
+    padding: 3px;
+    margin-bottom: 5px;
+}
+  
+.login-form button:hover {
+    background-color: rgba(255, 9, 9, 1);
+    cursor: pointer;
+}

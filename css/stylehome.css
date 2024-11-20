@@ -1,0 +1,30 @@
+/* css page Home */
+  h3{
+    color: #f0e9e9;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .ph{
+    color: #faf8f8;
+  }
+  
+  section{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top:30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .homecont{
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+  }

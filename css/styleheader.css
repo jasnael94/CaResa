@@ -1,0 +1,71 @@
+/* CSS header.php */
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0% 3%;
+}
+    
+.logo img {
+    height: 50px;
+    width: auto;
+}
+    
+.header-content {
+    flex-grow: 1;
+    text-align: center;
+}
+    
+.header-content h1 {
+    font-size: 24px;
+    color: white;
+    margin: 3% 1%;
+}
+    
+.nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 5%;    
+}
+    
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+    
+.nav a:hover {
+    border-bottom: #ccc solid 1px;
+    padding: 5px;
+}
+    
+    
+.buttonResa {
+  text-align: right;
+}
+    
+.buttonResa button {
+    background-color: transparent;
+    border: white solid 1px;
+    padding: 2% 8%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+    
+.buttonResa button:hover {
+    padding: 3% 9%;
+    border: #ccc double 4px;
+    transition: transform .3s; 
+}
+    
+.buttonResa button a {
+    color: white;
+    text-decoration: none;
+}

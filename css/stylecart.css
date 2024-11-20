@@ -133,64 +133,63 @@ form {
   }
   
   
-  .confirmation-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  
-  .confirmation-card {
-    background-color: #ffffff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 100%;
-    text-align: center;
-  }
-  
-  .confirmation-card h1 {
-    color: black;
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  .success-message {
-    font-size: 1.2em;
-    color: #333;
-    margin-bottom: 20px;
-  }
-  
-  .confirmation-card p {
-    font-size: 1em;
-    color: #555;
-    line-height: 1.6;
-  }
-  
-  .confirmation-card p strong {
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .note {
-    font-size: 0.9em;
-    color: #777;
-    margin-top: 20px;
-  }
-  
-  .back-button {
-    display: inline-block;
-    margin-top: 30px;
-    padding: 10px 20px;
-    background-color: #333;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1em;
-  }
-  
-  .back-button:hover {
-    background-color: black;
-  }
-  
+.confirmation-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.confirmation-card {
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+.confirmation-card h1 {
+  color: black;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.success-message {
+  font-size: 1.2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.confirmation-card p {
+  font-size: 1em;
+  color: #555;
+  line-height: 1.6;
+}
+
+.confirmation-card p strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.note {
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 20px;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.back-button:hover {
+  background-color: black;
+}
