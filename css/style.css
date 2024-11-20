@@ -1,8 +1,20 @@
+@font-face {
+  font-family: 'Slogan';
+  src: url(../fonts/MrsSaintDelafield-Regular.ttf) format(truetype);
+}
+
+@font-face {
+  font-family: 'Title' ;
+  src: url(../fonts/AlumniSansPinstripe-Regular.ttf) format(truetype);
+}
+
+
 
 * {
 margin: 0;
 padding: 0;
 box-sizing: border-box;
+--red : #c20202;
 }
 
 
@@ -13,7 +25,9 @@ background-position-y: top;
 background-repeat: no-repeat;
 background-color: black;
 height: 100vh;
-font-family: 'Arial', sans-serif;
+font-family: 'Slogan';
+font-weight: 100;
+
 width: 100% ;
 height: 100vh;
 display: flex;

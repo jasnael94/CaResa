@@ -19,30 +19,50 @@
     text-align: center;
 }
     
-.header-content h1 {
-    font-size: 24px;
+.header-content {
     color: white;
-    margin: 3% 1%;
-}
+    margin: 3% 0%;
     
+}
+
+.rouler, .choice{
+    font-size: 58px;
+    font-weight: 100;
+    text-shadow: 2px 1px 2px var(--red), 0 0 1em white, 0 0 0.2em white;
+}
+
+.rouler{
+    display: flex;
+    justify-content: left;
+    margin-left: 20%;
+    margin-bottom: 0;
+}
+
+.choice{
+    display: flex;
+    justify-content: right;
+    margin-right: 20%;
+    margin-top: 0;
+}
 .nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    gap: 5%;    
+    gap: 5%;  
+    font-family: 'Title';  
 }
     
 .nav a {
     color: white;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: bold;
     transition: color 0.3s ease;
 }
     
 .nav a:hover {
-    border-bottom: #ccc solid 1px;
-    padding: 5px;
+    border-bottom: var(--red) solid 1px;
+    
 }
     
     
@@ -52,6 +72,7 @@
     
 .buttonResa button {
     background-color: transparent;
+    color: white;
     border: white solid 1px;
     padding: 2% 8%;
     font-size: 16px;
@@ -60,12 +81,16 @@
 }
     
 .buttonResa button:hover {
-    padding: 3% 9%;
-    border: #ccc double 4px;
+    border: var(--red) solid 1px;
+    background-color: var(--red);
     transition: transform .3s; 
 }
     
-.buttonResa button a {
+a {
     color: white;
     text-decoration: none;
+}
+
+button:hover a{
+    color: black;
 }
