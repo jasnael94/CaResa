@@ -31,7 +31,10 @@
       
       <!-- Slogan et barre de navigation -->
       <div class="header-content">
-        <h1>Roulez différemment, choisissez l'excellence</h1>
+        <h1>
+          <div class="rouler">Roulez différemment ...</div>
+          <div class="choice">Choisissez l'excellence</div> 
+        </h1>
         
         <nav class="nav">
           <ul>
