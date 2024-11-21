@@ -1,9 +1,12 @@
 /* css page Home */
+
   h2{
-    font-size: 80px;
+    font-size: 90px;
     color: #faf8f8;
     font-family: 'Title';
-    
+    font-weight: 100;
+    text-shadow: var(--red) 2px 5px;
+    text-transform: uppercase;
   }
   h3{
     font-size: 50px;
@@ -16,7 +19,7 @@
   
   .ph{
     color: white;
-    text-align: center;
+    text-align:left;
     font-size: 24px;
     padding: 3%;
   }
@@ -28,9 +31,10 @@
   .section1{
     display: flex;
     justify-content: flex-start;
+    margin-left: 2%;
     align-items: flex-start;
     flex-direction: row;
-    
+    margin-bottom: 2%;
   }
   .section2{
     display: flex;
@@ -39,6 +43,7 @@
     background-color: rgb(15, 15, 15);
     opacity: 70%;
     height: 500px;
+    margin-bottom: 2%;
   }
 
 
@@ -46,35 +51,41 @@
     width: 30%;;
     display: flex;
     flex-direction: column;
-    margin: left 10px;;
     gap: 10%;
-  }
-  section{
-    max-height: 500px;
+    padding: 2%;
   }
   
   .homecont{
     height: 100%;
-    border-radius: 10px;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     gap:2%;
+    padding: 3%;
     
+  }
+
+  .butt{
+    display: flex;
+    justify-content: center;
   }
  
   .discover{
-   width: 100px;
-   font-size: 20px;
-   margin: auto;
+    border: white solid 1px;
+    border-radius: 4px ;
+    background-color: black;
+    font-size: 20px;
+    padding: 2% 8%;
   
   }
-
-
-
 
   a{
     text-decoration: none;
 
+  }
+  
+  .discover:hover{
+    background-color: var(--red);
+    border: var(--red) solid 1px;
   }
