@@ -47,11 +47,18 @@ CREATE TABLE bookings (
 -- Options supplémentaires pour les réservations
 CREATE TABLE options (
   id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
-  idBooking INT NOT NULL,
-  `type` VARCHAR(255) NOT NULL, 
-  FOREIGN KEY (idBooking) REFERENCES bookings(id)
+  optname VARCHAR(255) NOT NULL, 
 );
 
+-- Table pour relier les options aux réservations
+CREATE TABLE options_booking (
+  id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+  idOptions INT NOT NULL,
+  idBooking INT NOT NULL,
+  FOREIGN KEY (idOptions) REFERENCES options(id),
+  FOREIGN KEY (idBooking) REFERENCES bookings(id)
+
+);
 -- Ajout de quelques données (clients et voitures)
 
 INSERT INTO clients (lastname, firstname, email, `address`, driver_licence, birthday, phone)
