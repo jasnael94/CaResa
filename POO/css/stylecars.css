@@ -1,0 +1,134 @@
+/* CSS page cars.php */
+
+  .search-container {
+    background-color: #000000;
+    margin-top: 10px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .search-container input, .search-container select, .search-container button {
+    margin: 5px;
+    padding: 5px;
+    border: 0;
+    border-radius: 3px;
+  }
+  
+  .search-container button {
+    color: whitesmoke;
+    background-color: #000000;
+    border: solid whitesmoke 1px ;
+  }
+  
+  .search-container button:hover {
+    border: var(--red) solid 1px;
+    background-color: var(--red);
+    transition: transform .3s;  
+    cursor: pointer;
+  }
+  
+  .cars-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .cars-title {
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Slogan';
+    font-size: 3rem;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .carousels-container {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .carousel-container {
+    background-color: rgba(29, 29, 29, 0.3);
+    border-radius: 5px;
+    margin: 5px;
+    color: whitesmoke;
+    flex: 0 0 600px;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border:solid var(--red) 1px;
+  }
+  
+  .carousel-container img {
+    width: 95%;
+    margin: 2px;
+  }
+  
+  .car-container img {
+    width: 95%;
+    margin: 2px;
+  }
+  
+  .cars-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #000000;
+  }
+  
+  .car-container {
+    width: 426px;
+    background-color: rgba(29, 29, 29, 0.3);
+    border-radius: 5px;
+    margin: 5px;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border:solid var(--red) 1px;
+    box-shadow: 3px 0 5px var(--red);
+  }
+  
+  .reserve-button {
+    width: 100%;
+    text-decoration: none;
+    border: solid white 1px;
+    color: whitesmoke;
+    background-color: black;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .reserve-button:hover {
+    border: var(--red) solid 1px;
+    background-color: var(--red);
+    transition: transform .3s; 
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #ffffff;
+  }
+  
+  
+  ::-webkit-scrollbar {
+    height: 15px;
+    background-color: #080707;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: #000000;
+  }
+  
+  .contact-info, .contact-section {
+    color: whitesmoke;
+  }

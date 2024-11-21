@@ -1,0 +1,91 @@
+/* css page Home */
+
+  h2{
+    font-size: 90px;
+    color: #faf8f8;
+    font-family: 'Title';
+    font-weight: 100;
+    text-shadow: var(--red) 2px 5px;
+    text-transform: uppercase;
+  }
+  h3{
+    font-size: 50px;
+    color: #f0e9e9;
+    font-family: 'Slogan';
+    font-weight: 100;
+    border-bottom: var(--red) solid 1px;
+    
+  }
+  
+  .ph{
+    color: white;
+    text-align:left;
+    font-size: 24px;
+    padding: 3%;
+  }
+
+  .section1_container{
+    height: 60%;
+  }
+
+  .section1{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 2%;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-bottom: 2%;
+  }
+  .section2{
+    display: flex;
+    justify-content: space-around;
+    border: white solid 1px;
+    background-color: rgb(15, 15, 15);
+    opacity: 70%;
+    height: 500px;
+    margin-bottom: 2%;
+  }
+
+
+  .div1{
+    width: 30%;;
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    padding: 2%;
+  }
+  
+  .homecont{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap:2%;
+    padding: 3%;
+    
+  }
+
+  .butt{
+    display: flex;
+    justify-content: center;
+  }
+ 
+  .discover{
+    border: white solid 1px;
+    border-radius: 4px ;
+    background-color: black;
+    font-size: 20px;
+    padding: 2% 8%;
+  
+  }
+
+  a{
+    text-decoration: none;
+
+  }
+  
+  .discover:hover{
+    background-color: var(--red);
+    border: var(--red) solid 1px;
+  }

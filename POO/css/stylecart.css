@@ -1,0 +1,207 @@
+/*formulaire de reservation */
+
+/* Conteneur principal de la page */
+.cart-container {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  max-width: 100%;
+  margin: 50px auto;
+  background: rgba(0, 0, 0, 0.644);
+  padding: 2%;
+  border-radius: 10px;
+
+}
+.formulaire, .condition{
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: baseline;
+  max-height: 100%;
+  color:white;
+  font-size: 20px;
+}
+
+/* Titre principal */
+.formulaire h1 , .condition h2{
+  text-align: center;
+  font-family: 'Slogan';
+  font-weight: 100;
+  font-size: 50px;
+  color: white;
+  border-bottom: var(--red) solid 1px;
+}
+
+.condition h3{
+  color: var(--red);
+}
+
+#myForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 3%;
+}
+/* Style des labels du formulaire */
+form label {
+  font-size: 24px;
+  color: white; 
+}
+
+/* Style des champs de saisie */
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form select {
+  width: 100%;
+  padding: 1%;
+  margin: 8px 0;
+  border: 2px solid white;
+  border-radius: 5px;
+  font-size: 22px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.644);
+}
+
+/* Style du contenu des champs*/
+option{
+  font-family: 'Royalride';
+  font-size: 20px;
+  color: white;
+} 
+
+form select:active{
+  color: aqua;
+}
+/* Effet de survol pour les champs de saisie */
+form input[type="text"]:hover,
+form input[type="email"]:hover,
+form input[type="date"]:hover,
+form select:hover {
+  border-color: var(--red);
+}
+
+/* Effet au focus sur les champs de saisie */
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="date"]:focus,
+form select:focus {
+  border-color: var(--red);
+  outline: none;
+}
+
+/* Bouton de soumission */
+.butt{
+  display: flex;
+  justify-content: center;
+  
+}
+.btn-submit{
+  background-color: transparent;
+  color: white;
+  border: var(--red) solid 1px;
+  border-radius: 5px;
+  padding: 2% 8%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Royalride';
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* Effet de survol pour le bouton */
+.btn-submit:hover {
+  color: black;
+  background-color: var(--red);
+}
+
+
+
+/* Style des erreurs */
+.error-message {
+  color: red;
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+
+/* style des succès*/
+
+.confirmation-container {
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+
+.confirmation-card {
+background-color: #ffffff;
+padding: 30px;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+max-width: 600px;
+width: 100%;
+text-align: center;
+}
+
+.confirmation-card h1 {
+color: black;
+font-size: 2.5em;
+margin-bottom: 20px;
+}
+
+.success-message {
+font-size: 1.2em;
+color: #333;
+margin-bottom: 20px;
+}
+
+.confirmation-card p {
+font-size: 1em;
+color: #555;
+line-height: 1.6;
+}
+
+.confirmation-card p strong {
+font-weight: bold;
+color: #333;
+}
+
+.note {
+font-size: 0.9em;
+color: #777;
+margin-top: 20px;
+}
+
+.back-button {
+display: inline-block;
+margin-top: 30px;
+padding: 10px 20px;
+background-color: #333;
+color: white;
+text-decoration: none;
+border-radius: 5px;
+font-size: 1em;
+}
+
+.back-button:hover {
+background-color: black;
+}
+
+.finalsentence{
+  font-family: 'Slogan';
+  font-weight: 100;
+  font-size: 42px;
+  word-spacing: 10px;
+  text-align: right;
+  color: var(--red);
+}
+
+::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+}
+
+/*Style font des input*/
+input, textarea, select {
+  font-family:inherit;
+}

@@ -1,0 +1,15 @@
+/login //Afficher le formulaire de connection
+
+/logout //Deconnection et redirection vers home
+
+/home //Afficher la home
+
+/faq //Afficher la FAQ
+
+/conditions //Afficher les conditions
+
+/cars //Afficher la liste des voitures
+
+/bookings //Afficher la liste des réservations
+
+/cart //Afficher le formulaire de réservation
