@@ -1,16 +1,17 @@
 <?php
 
-class Cars 
+class Car 
 {
         use Timestamp;
-        private int $brand;
-        private int $model;
+
+        private string $brand;
+        private string $model;
         private int $yearProd;
         private float $pricePerDay;
-        private string $available = 'disponible';
+        private bool $available = true;
         private string $pictures;
   
-    public function getBrand(): int
+    public function getBrand(): string
     {
         return $this->brand;
     }
@@ -19,7 +20,7 @@ class Cars
         return $this->brand = $newBrand;    
     }
 
-    public function getModel(): int
+    public function getModel(): string
     {
         return $this->model;
     }
@@ -46,7 +47,7 @@ class Cars
         return $this->pricePerDay = $newPricePerDay;    
     }
 
-    public function getAvailable(): string
+    public function getAvailable(): bool
     {
         return $this->available;
     }
