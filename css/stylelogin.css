@@ -19,8 +19,8 @@
     width: 400px;
     height: 500px;
     background-color: rgba(29, 29, 29, 0.90);
-    border: solid #1d1d1d 2px;
-    border-radius: 8px;
+    border: solid rgba(0, 0, 0, 0.622) 2px;
+    border-radius: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -28,19 +28,25 @@
 }
   
 .login-content h1{
-    color: whitesmoke;
-    font-size: 35px;
-    text-decoration: underline;
+    color: white;
+    font-family: 'Slogan';
+    font-weight: 100;
+    font-size: 50px;
+    text-shadow: 2px 1px 2px var(--red), 0 0 1em white, 0 0 0.2em white;
+    border-bottom: var(--red) solid 1px;
 }
   
 .login-content h2 {
-    color: whitesmoke;
-    font-size: 28px;
-    text-decoration: underline;
+    color: white;
+    font-family: 'Royalride';
+    font-size: 32px;
+    border-bottom: white solid 1px;
 }
   
 .login-content p  {
-    color: greenyellow;
+    color: var(--red);
+    font-family: 'Royalride';
+    font-weight: bold;
 }
   
 .login-form {
@@ -48,31 +54,42 @@
     border-radius: 5px;
     width: 80%;
     height: 45%;
-    color: whitesmoke;
-    font-size: 25px;
+    color: white;
+    font-family: 'Royalride';
+    font-size: 24px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
 }
-  
+.login-form label{
+    font-size: 24px;
+} 
 .login-form input {
     width: 55%;
     border-radius: 6px;
-    padding: 3px;
+    padding: 2%;
     border: 0;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 24px;
+    color: #333;
 }
   
 .login-form button {
     border: 0;
     width: 55%;
-    background-color: rgba(255, 9, 9, 0.50);
+    background-color: var(--red);
     border-radius: 6px;
-    padding: 3px;
+    padding: 2%;
     margin-bottom: 5px;
+    font-family: inherit;
+    font-size: 24px;
+    font-weight: bold;
 }
   
 .login-form button:hover {
-    background-color: rgba(255, 9, 9, 1);
+    color: white;
+    background-color: black;
     cursor: pointer;
 }
