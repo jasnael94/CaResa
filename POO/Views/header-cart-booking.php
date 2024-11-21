@@ -16,7 +16,6 @@
   <link rel="stylesheet" href="/css/styleheader.css">
   <link rel="stylesheet" href="/css/stylefooter.css">
   <link rel="stylesheet" href="/css/style.css">
-
   <link rel="stylesheet" href="/css/<?php echo $css ?>">
   <link rel="icon" type="image/gif" href="/pictures/favicon.png" />
 </head>

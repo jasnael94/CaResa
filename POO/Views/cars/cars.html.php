@@ -14,7 +14,7 @@
                     </ul>
                 <?php
                     if($carListCaroussels['available'] === 'disponible') { ?>
-                        <a class="reserve-button" href="cart?id=<?php echo $carListCaroussels['id'];?>" target="blank">Réserver</a>
+                        <a class="reserve-button" href="cart" target="blank">Réserver</a>
                 <?php } else {
                     ?> <br><p style="color: red; font-size: 20px;">Non disponible à la réservation</p>
                 <?php }
@@ -54,7 +54,7 @@
                     </ul>
                 <?php
                     if($carLists['available'] === 'disponible') { ?>
-                        <a class="reserve-button" href="cart?id=<?php echo $carLists['id'];?>" target="blank">Réserver</a>
+                        <a class="reserve-button" href="cart" target="blank">Réserver</a>
                 <?php } else {
                     ?> <br><p style="color: red; font-size: 20px;">Non disponible à la réservation</p>
                 <?php }

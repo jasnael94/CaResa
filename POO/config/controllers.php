@@ -8,3 +8,4 @@ require PATH.'\Controllers\FaqController.php';
 require PATH.'\Controllers\HomeController.php';
 require PATH.'\Controllers\LoginController.php';
 require PATH.'\Controllers\LogoutController.php';
+require PATH.'\Controllers\ProcessCartController.php';
