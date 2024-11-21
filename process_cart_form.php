@@ -1,6 +1,7 @@
 <?php
     require_once('connect.php');
     require_once('header.php');
+    $css='';
 
     if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         try {
