@@ -28,8 +28,8 @@ class CarController {
             $carList = $this->carRepository->getCarFilterSearch();
         }
         
-        include PATH.'\Views\header.php';
-        include PATH.'\Views\cars\cars.html.php';
-        include PATH.'\Views\footer.php';
+        include PATH.'/Views/header.php';
+        include PATH.'/Views/cars/cars.html.php';
+        include PATH.'/Views/footer.php';
     }
 }  

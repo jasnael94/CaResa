@@ -1,6 +1,6 @@
 <?php
 
-define('PATH', 'C:\Users\denis\OneDrive\Bureau\Donkeyschool\ProjetResa\RoyalRide\V2');
+define('PATH', '/Users/jason/Desktop/Royalride/V2');
 
 define('MYSQL_USER', 'root');
 define('MYSQL_PASS', '');

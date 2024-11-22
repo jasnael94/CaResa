@@ -40,8 +40,8 @@ class ProcessCartController
 
         $css = 'stylecart.css';
        
-        include PATH.'\Views\header-cart-booking.php';
-        include PATH.'\Views\process_cart\process_cart.html.php';
-        include PATH.'\Views\footer.php';
+        include PATH.'/Views/header-cart-booking.php';
+        include PATH.'/Views/process_cart/process_cart.html.php';
+        include PATH.'/Views/footer.php';
     }
 }

@@ -22,6 +22,6 @@ class LoginController
             echo "Erreur veuillez remplir les champs..";
         }
     }
-        include PATH.'\Views\login\login.html.php';
+        include PATH.'/Views/login/login.html.php';
     }
 }
