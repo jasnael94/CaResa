@@ -6,8 +6,8 @@ class ConditionsController
     {
         $css = 'styleCG.css';
 
-        include PATH.'\Views\header.php';
-        include PATH.'\Views\conditions\conditions.html.php';
-        include PATH.'\Views\footer.php';
+        include PATH.'/Views/header.php';
+        include PATH.'/Views/conditions/conditions.html.php';
+        include PATH.'/Views/footer.php';
     }
 }
