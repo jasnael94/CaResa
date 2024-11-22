@@ -3,7 +3,7 @@
         <div class="div1">
             <h2>LOCATION DE SUV ou BERLINE </h2>
             <p class="ph">Nous nous engageons à offrir une expérience de location de voiture sans faille, avec un service client disponible 24h/24 et 7j/7. Découvrez le luxe à son apogée avec RoyalRide et laissez-nous vous conduire vers de nouvelles aventures. Faites de votre prochain trajet un moment inoubliable, à la hauteur de vos attentes.</p> 
-            <button class="discover"><a href="/cars.php">Decouvrir</a></button>   
+            <button class="discover"><a href="car">Decouvrir</a></button>   
         </div>
     </section>
 </div>
