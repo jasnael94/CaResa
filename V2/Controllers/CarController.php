@@ -16,6 +16,8 @@ class CarController {
         $css = 'stylecars.css';
         $carListCaroussel = $this->carRepository->getCarListCaroussel();
         $carList = $this->carRepository->getCarList();
+        $_POST['filter']='';
+        $_POST['search']='';
         
         if($_POST['filter'] === "Prix") {
             $carList = $this->carRepository->getCarFilterPrice();
