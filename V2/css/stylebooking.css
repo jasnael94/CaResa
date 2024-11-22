@@ -6,24 +6,35 @@
     color: whitesmoke;
   }
    .bookings-container ul {
+    font-size: 20px;
     list-style: none;
    }
   
-   .booking-container li, .booking-container h4 {
+   .booking-container li{
     margin: 2px;
     padding: 2px;
    }
   
   .booking-container h2 {
+    text-align: center;
+    font-family: 'Slogan';
     font-size: 3rem;
     font-weight: 100;
+    border-bottom: var(--red) solid 1px;
+    margin-bottom: 2%;
   }
 
-  .bookings-container h2, .booking-container h3 {
+  .booking-container h3 {
+    text-align: center;
+    font-size: 2rem;
     text-decoration: underline;
-    margin: 5px;
   }
   
+  .booking-container h4{
+    font-size: 20px;
+    margin: 2px;
+    padding: 2px;
+  }
   .booking-container {
     width: 45%;
     margin: 10px;
@@ -38,6 +49,7 @@
     box-shadow: 1px 1px 4px rgb(253, 252, 252);
     display: flex;
     flex-direction: column;
+    padding: 2% 3%;
   }
   
   .status-open {
@@ -45,7 +57,7 @@
   }
   
   .status-closed {
-    color: red;
+    color: var(--red);
   }
   
   .separator {
