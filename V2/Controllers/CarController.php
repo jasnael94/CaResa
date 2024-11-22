@@ -16,6 +16,8 @@ class CarController {
         $css = 'stylecars.css';
         $carListCaroussel = $this->carRepository->getCarListCaroussel();
         $carList = $this->carRepository->getCarList();
+        $_POST['filter']='';
+        $_POST['search']='';
         
         if($_POST['filter'] === "Prix") {
             $carList = $this->carRepository->getCarFilterPrice();
@@ -28,8 +30,8 @@ class CarController {
             $carList = $this->carRepository->getCarFilterSearch();
         }
         
-        include PATH.'\Views\header.php';
-        include PATH.'\Views\cars\cars.html.php';
-        include PATH.'\Views\footer.php';
+        include PATH.'/Views/header.php';
+        include PATH.'/Views/cars/cars.html.php';
+        include PATH.'/Views/footer.php';
     }
 }  

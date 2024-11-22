@@ -18,8 +18,8 @@ class BookingController
         $bookingAvailable = $this->bookingRepository->GetBookingListAvailable($id);
         $bookingNotAvailable = $this->bookingRepository->GetBookingListNotAvailable($id);
         
-        include PATH.'\Views\header-cart-booking.php';
-        include PATH.'\Views\booking\booking.html.php';
-        include PATH.'\Views\footer.php';
+        include PATH.'/Views/header-cart-booking.php';
+        include PATH.'/Views/booking/booking.html.php';
+        include PATH.'/Views/footer.php';
     }
 }
