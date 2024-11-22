@@ -36,8 +36,11 @@
           <ul>
             <li><a href="home">Accueil</a></li>
             <li><a href="car">Nos véhicules</a></li>
+            <?php
+              if(!empty($_SESSION['login'])) { ?>
             <li><a href="booking">Mes réservations</a></li>
-            <li><a href="contact">Contact</a></li>
+            <?php } ?>
+            <li><a href="mailto:contact@royalride.com?subject=Demande%20d'informations&body=Bonjour,%20je%20souhaiterai%20avoir%20plus%20d'informations...">Contact</a></li>
             <li><a href="faq">FAQ</a></li>
             <?php
               if(!empty($_SESSION['login'])) { ?> 

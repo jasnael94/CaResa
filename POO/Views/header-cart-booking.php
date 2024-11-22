@@ -42,7 +42,7 @@
             <li><a href="home">Accueil</a></li>
             <li><a href="car">Nos véhicules</a></li>
             <li><a href="booking">Mes réservations</a></li>
-            <li><a href="contact">Contact</a></li>
+            <li><a href="mailto:contact@royalride.com?subject=Demande%20d'informations&body=Bonjour,%20je%20souhaiterai%20avoir%20plus%20d'informations...">Contact</a></li>
             <li><a href="faq">FAQ</a></li>
             <li><a href="logout">Déconnexion</a></li>
           </ul>
