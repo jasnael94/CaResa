@@ -20,6 +20,8 @@ class ProcessCartController
         $carId = (int)$_POST['car']; // L'ID de la voiture choisie
         $startDate = $_POST['startDate'];
         $endDate = $_POST['endDate'];
+        $createDate = new \DateTime;
+        $createDate = $createDate->format("Y-m-d");
 
          // Calculer le montant total de la réservation
         $carInfos = $this->processCartRepository->getCarInfos();
@@ -34,7 +36,7 @@ class ProcessCartController
 
         $clientId = $this->processCartRepository->getClientId();
 
-        $sendBooking = $this->processCartRepository->setBooking($clientId, $carId, $startDate, $endDate, $total);
+        $sendBooking = $this->processCartRepository->setBooking($clientId, $carId, $createDate, $startDate, $endDate, $total);
 
         $css = 'stylecart.css';
        

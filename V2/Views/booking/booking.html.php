@@ -13,7 +13,7 @@
                                 <h4>Informations de la réservation :</h4><br>
                                     <ul>
                                         <li>Nom : <?php echo $_SESSION['login'];?></li>
-                                        <li>Date de réservation : <?php echo $bookingAvailables['bookingDate'] ?></li>
+                                        <li>Date de réservation : <?php echo $bookingAvailables['createdAt'] ?></li>
                                         <li>Date de début : <?php echo $bookingAvailables['startDate'] ?></li>
                                         <li>Date de fin : <?php echo $bookingAvailables['endDate'] ?></li>
                                         <li>Prix total : <?php echo $bookingAvailables['total'] ?>€</li>                                       
@@ -48,7 +48,7 @@
                                 <h4>Informations de la réservation :</h4><br>
                                     <ul>
                                         <li>Nom : <?php echo $_SESSION['login'];?></li>
-                                        <li>Date de réservation : <?php echo $bookingNotAvailables['bookingDate'] ?></li>
+                                        <li>Date de réservation : <?php echo $bookingNotAvailables['createAt'] ?></li>
                                         <li>Date de début : <?php echo $bookingNotAvailables['startDate'] ?></li>
                                         <li>Date de fin : <?php echo $bookingNotAvailables['endDate'] ?></li>
                                         <li>Prix total : <?php echo $bookingNotAvailables['total'] ?>€</li>                                       

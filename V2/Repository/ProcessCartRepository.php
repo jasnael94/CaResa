@@ -27,13 +27,14 @@ class ProcessCartRepository
         return $stmt->fetch();
     }
 
-    public function setBooking($idClient, $idCar, $startDate, $endDate, $total): void
+    public function setBooking($idClient, $idCar, $createdDate, $startDate, $endDate, $total): void
     {
-        $query = "INSERT INTO bookings (idClient, idCar, startDate, endDate, total, statut) 
-        VALUES (:idClient, :idCar, :startDate, :endDate, :total, 'en cours')";
+        $query = "INSERT INTO bookings (idClient, idCar, createdAt, startDate, endDate, total, statut) 
+        VALUES (:idClient, :idCar, :createdDate, :startDate, :endDate, :total, 'en cours')";
         $stmt = $this->dbh->prepare($query);
         $stmt->bindValue(':idClient', $idClient, PDO::PARAM_INT);
         $stmt->bindValue(':idCar', $idCar, PDO::PARAM_INT);
+        $stmt->bindValue(':createdDate', $createdDate, PDO::PARAM_STR);
         $stmt->bindValue(':startDate', $startDate, PDO::PARAM_STR);
         $stmt->bindValue(':endDate', $endDate, PDO::PARAM_STR);
         $stmt->bindValue(':total', $total, PDO::PARAM_INT);
