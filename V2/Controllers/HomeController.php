@@ -8,8 +8,8 @@ class HomeController
 
         $css = 'stylehome.css';
 
-        include PATH.'\Views\header.php';
-        include PATH.'\Views\home\home.html.php';
-        include PATH.'\Views\footer.php';
+        include PATH.'/Views/header.php';
+        include PATH.'/Views/home/home.html.php';
+        include PATH.'/Views/footer.php';
     }
 }
