@@ -18,8 +18,7 @@
 .login-content {
     width: 400px;
     height: 500px;
-    background-color: rgba(29, 29, 29, 0.90);
-    border: solid rgba(0, 0, 0, 0.622) 2px;
+    background-color: rgba(0, 0, 0, 0.644);
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -64,6 +63,7 @@
 }
 .login-form label{
     font-size: 24px;
+    color: white;
 } 
 .login-form input {
     width: 55%;
@@ -71,9 +71,9 @@
     padding: 2%;
     border: 0;
     font-family: inherit;
-    font-weight: 500;
+    font-weight: bold;
     font-size: 24px;
-    color: #333;
+    color: black;
 }
   
 .login-form button {
