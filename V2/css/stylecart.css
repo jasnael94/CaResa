@@ -128,56 +128,51 @@ form select:focus {
 /* style des succès*/
 
 .confirmation-container {
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
 }
 
 .confirmation-card {
-background-color: #ffffff;
-padding: 30px;
-border-radius: 10px;
-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-max-width: 600px;
-width: 100%;
-text-align: center;
+  background-color: rgba(0, 0, 0, 0.644);
+  padding: 3% 2%;
+  border-radius: 10px;
+  border: white double 5px;
+  max-width: 500px;
+  width: 100%;
+  text-align: center;
+  color: white;
 }
 
 .confirmation-card h1 {
-color: black;
-font-size: 2.5em;
-margin-bottom: 20px;
+  font-family: 'Slogan';
+  font-weight: 100;
+  font-size: 2.5em;
+  word-spacing: 10px;
 }
 
+.card-content{
+  border: var(--red) solid 1px;
+  border-radius: 5px;
+  padding: 4%;
+}
 .success-message {
-font-size: 1.2em;
-color: #333;
-margin-bottom: 20px;
-}
-
-.confirmation-card p {
 font-size: 1em;
-color: #555;
-line-height: 1.6;
-}
-
-.confirmation-card p strong {
 font-weight: bold;
-color: #333;
+margin-bottom: 4px;
 }
 
 .note {
-font-size: 0.9em;
-color: #777;
-margin-top: 20px;
+font-size: 1em;
+font-weight: bold;
 }
 
 .back-button {
 display: inline-block;
 margin-top: 30px;
 padding: 10px 20px;
-background-color: #333;
+border: white solid 1px;
 color: white;
 text-decoration: none;
 border-radius: 5px;
@@ -185,7 +180,10 @@ font-size: 1em;
 }
 
 .back-button:hover {
-background-color: black;
+background-color: var(--red);
+border: var(--red) solid 1px;
+color: black;
+font-weight: bold;
 }
 
 .finalsentence{
@@ -197,6 +195,7 @@ background-color: black;
   color: var(--red);
 }
 
+/* black calendar logo */
 ::-webkit-calendar-picker-indicator {
   filter: invert(1);
 }
