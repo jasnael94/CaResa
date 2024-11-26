@@ -74,7 +74,7 @@
         <p>Nous vous offrons la possibilité de conduire les plus belles voitures du monde, qu'il s'agisse d'un modèle prestigieux ou d'un véhicule de performance exceptionnel.</p>
         <br><br>
         <h3>Comment réserver ?</h3><br>
-        <p>Remplissez simplement le formulaire ci-dessous pour réserver la voiture de vos rêves. Indiquez vos informations personnelles, sélectionnez la voiture que vous souhaitez louer, et choisissez vos dates de début et de fin de location.</p>
+        <p>Remplissez simplement le formulaire pour réserver la voiture de vos rêves. Indiquez vos informations personnelles, sélectionnez la voiture que vous souhaitez louer, et choisissez vos dates de début et de fin de location.</p>
         <p>Nos voitures sont soigneusement entretenues et disponibles pour des périodes de location flexibles. Vous pouvez être sûr de profiter d'une expérience de conduite exceptionnelle et d'un service haut de gamme à chaque instant.</p>
         <br><br>
         <h3>Pourquoi réserver chez nous ?</h3><br>

@@ -205,3 +205,78 @@ background-color: black;
 input, textarea, select {
   font-family:inherit;
 }
+
+
+/* Media query pour les écrans de bureau (plus de 1200px) */
+@media (min-width: 1200px) {
+  .cart-container {
+    flex-direction: row; /* Afficher les éléments côte à côte */
+    padding: 3%;
+  }
+
+  .formulaire, .condition {
+    width: 45%; /* Réduire la largeur des sections pour plus d'espace */
+  }
+
+  .formulaire h1, .condition h2 {
+    font-size: 50px; /* Taille de police plus grande pour les grands écrans */
+  }
+}
+
+/* Media query pour les écrans moyens (tablettes et petits écrans, 768px à 1200px) */
+@media (max-width: 1200px) and (min-width: 768px) {
+  .cart-container {
+    flex-direction: row;
+    gap: 3%;
+    padding: 3%;
+  }
+
+  .formulaire, .condition {
+    width: 48%; /* Ajuster la largeur des sections */
+  }
+
+  .btn-submit {
+    font-size: 20px; /* Ajuster la taille du bouton */
+    padding: 1% 6%;
+  }
+}
+
+/* Media query pour les petits écrans (mobiles, jusqu'à 768px) */
+@media (max-width: 768px) {
+  .cart-container {
+    flex-direction: column; /* Mettre les éléments en colonne */
+    gap: 20px;
+    padding: 5%;
+  }
+
+  .formulaire, .condition {
+    width: 100%; /* Les sections prennent toute la largeur */
+  }
+}
+
+/* Media query pour les très petits écrans (ex: téléphones de petite taille) */
+@media (max-width: 480px) {
+  .cart-container {
+    padding: 10px;
+  }
+
+  .formulaire h1, .condition h2{
+    font-size: 35px;
+  }
+
+  .formulaire label{
+    font-size: 20px;
+  }
+
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="date"],
+  form select {
+    font-size: 20px;
+  } 
+
+  .finalsentence{
+    text-align: center;
+    font-size: 28px;
+  }
+}
