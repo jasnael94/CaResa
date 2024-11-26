@@ -16,7 +16,9 @@ h2{
 }
   
 .faq-item {
-  background-color: rgb(0, 0, 0, 0.622);
+  background-color: rgb(0, 0, 0, 0.644);
+  border: var(--red) solid 1px;
+  border-radius: 10px;
   margin: 0% 4%;
   padding: 2% 4%;
 }
@@ -24,24 +26,17 @@ h2{
 h3{
   font-size: 22px;
   margin-bottom: 2%;
+  border-bottom: whitesmoke solid 1px;
 }
 
+.faq-item a{
+  text-decoration: underline;
+  color: white;
+}
 .answer{
   font-size: 20px;
 }
 
-.faq-item:hover {
-  
-}
 
-.faq-item .answer {
-  
-}
 
-.faq-item:hover .answer {
-  
-}
 
-.question {
-  
-}
